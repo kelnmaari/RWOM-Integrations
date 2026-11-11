@@ -41,8 +41,10 @@
          patches the editor's StartEditor entry, so its assembly has to load
          first. -->
     <li>void.charactereditor</li>
+    <li>tanyavonhart.kindred</li>
   </loadAfter>
   <loadBefore>
+    <li>kazenokizu.rimthreaded</li>
     <li>rwmt.MultiplayerCompatibility</li>
   </loadBefore>
   <description>Optional third-party compatibility for A RimWorld of Magic (Continued).
@@ -52,7 +54,7 @@ Each entry names the author or maintainer of the targeted version.
 
 - Vanilla Gravship Expanded - Chapters 1 and 2 (Vanilla Expanded team): oxygen pipes, flight fuel, gravengine power and shield interception.
 - Vanilla Psycasts Expanded / Vanilla Expanded Framework (Vanilla Expanded team): prevents overlapping RWoM and external casts.
-- Kure's Class Expansion - 1.7 Unofficial (kelnmaari): repairs Pridestalker class degrees and stamina-potion addiction links.
+- Kure's Class Expansion - 1.7 Unofficial (kelnmaari): repairs Pridestalker class degrees and stamina-potion addiction links; Chef's local food, coffee and spice effects work beneath thick roofs without changing their flight interception.
 - Humanoid Alien Races (erdelf): respects race and backstory trait restrictions.
 - Pawnmorpher (The Pawnmorpher Team): preserves RWoM progression components during race changes; this does not port Pawnmorpher itself to 1.7.
 - Giddy-Up 2 - Continued (Meme Goddess): mounting and dismounting hooks for RWoM abilities.
@@ -60,6 +62,8 @@ Each entry names the author or maintainer of the targeted version.
 - (1.7)Multiplayer-temp (RimWorld Multiplayer Team): ability and command synchronization, including owner-aware casts across maps.
 - ISEKAI DUNGEONS ADD-ON (Poupun): RWoM dungeon definitions; the external exact-name compatibility check still applies.
 - RimLogging / Logging Framework (RimWorks): optional structured diagnostics, with Verse.Log fallback.
+- RimThreaded - kazenokizu's 1.6/1.7 port: prepares Odyssey magic fields before worker dispatch to avoid overlapping tick-list preparation. This does not establish full multithreaded compatibility. Keep RimThreaded last.
+- Kindred (TanyaVonHart): allows mana and stamina on risen servants with the corresponding RWoM class; ordinary biological needs remain disabled.
 - MedPod (sumghai): excludes Arcane Weakness from treatment.
 - Hellsing ARMS Ultimate (Baskerville): connects holy and decay damage effects.
 - Ability AI (SaintWacko): hands RWoM autocast ownership to Ability AI — colonist autocast, NPC casting, movement, summons and area spells are decided there, with rules for 250 spells; right-click a spell button for Ability AI's autocast menu. Without Ability AI the classic RWoM autocast is untouched.

@@ -6,7 +6,8 @@ This directory is an independent RimWorld 1.7 mod, not another load folder of th
 
 - MedPod: excludes Arcane Weakness from treatment, when the original MedPod name gate matches.
 - Hellsing ARMS Ultimate: retains the original holy/decay damage integrations and original name gate.
-- Kure: connects the stamina-potion addiction to its chemical need when the relevant definitions exist and no link is already present. A fixed Kure version remains authoritative.
+- Kure: connects the stamina-potion addiction to its chemical need when the relevant definitions exist and no link is already present. A fixed Kure version remains authoritative. Chef's three local support carriers (food, coffee and spice) can apply effects beneath thick roofs; their overhead flight and ordinary target/interception checks are retained. This does not change Satiated into a food-bar refill: it slows hunger loss.
+- Kindred: the optional `tanyavonhart.kindred` load root allows only RWoM mana and stamina through the risen servant's need whitelist. Class resource enablers are still required; food, rest, mood and other needs remain disabled. Kindred itself is not modified or bundled.
 
 - VGE 1/2: conditional XML, fuel providers/refunds, gravengine power, oxygen pipe output, beam interception and boarding-pod landing adapters. The assembly identity remains `TorannMagic.VGE`.
 
@@ -19,6 +20,7 @@ This directory is an independent RimWorld 1.7 mod, not another load folder of th
 - Multiplayer: conditional synchronization adapter, with the original public Content facades retained.
 - Isekai Dungeons: conditional RWoM dungeon definitions; no duplicate leveling bonuses.
 - Logging Framework: optional provider backend with safe Content-owned fallback.
+- RimThreaded (kazenokizu's 1.6/1.7 port, Workshop 3823807930): prepares Odyssey magic fields before the port releases its worker threads, rather than repeating field preparation concurrently from normal/rare/long tick lists. This narrowly scoped adapter is not a declaration that all RWoM gameplay is thread-safe. Keep RimThreaded last as its author requests.
 
 These adapters have focused verification. Multiplayer has also passed a live two-process, two-map Blink check with matching payment, cooldown and destination on both peers. This is not a claim that every ability or combination of third-party mods is multiplayer-safe. Official DLC support, general ability safety and class-progression data remain in RWoM. Detailed release evidence and known exclusions are recorded in the repository's integration plan and external verification artifacts.
 
